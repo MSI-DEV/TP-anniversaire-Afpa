@@ -1,0 +1,57 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  border: solid 1px black;
+  border-radius: 5rem;
+  text-align: center;
+  width: 20%;
+  background-color: beige;
+}
+
+main {
+  border: solid 1px black;
+  border-radius: 3rem;
+  height: 40rem;
+  text-align: center;
+  background-color: beige;
+  width: 30%;
+  margin-top: 1rem;
+}
+
+p {
+  padding: 2rem;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  width: 20%;
+  border-radius: 1rem;
+  padding-left: 1.5rem;
+}
+
+button#boutonCalculer {
+  width: 80%;
+  padding-top: 1rem;
+  padding-left: 9.5rem;
+  border-radius: 3rem;
+  height: 3rem;
+}
+
+input#mois, input#jour {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  width: 20%;
+  padding: 0.3rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5rem;
+}/*# sourceMappingURL=style.css.map */

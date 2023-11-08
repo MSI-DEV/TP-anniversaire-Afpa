@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="module" src="../assets/js/script.js" defer></script>
     <title>TP Anniversaire</title>
 </head>
 <body>
-    
+   <header>
+        <h1>TP Anniversaire</h1>
+    </header> 
+    <main>
+        <nav>
+            <p>
+                Saisissez votre jour de naissance (en chiffres):
+            </p>
+                <input type="number" id="jour" min="1" max="31">
+            
+            <p>
+                Saisissez votre mois de <span>naissance (en chiffres):</span>
+            </p>
+                <input type="number" id="mois" min="1" max="12">
+            
+        </nav>
+        <button id="resetChamps" type="button">Reset</button>
+        <button id="boutonCalculer"></button>
+        <p id="resultat"></p>
+    </main>
+    <footer>
+        <p>&copy;Copyright Mathieu FREMONT - Id-Formation 2023</p>
+    </footer>
 </body>
 </html>
