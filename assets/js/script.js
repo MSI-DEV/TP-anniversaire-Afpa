@@ -14,6 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
 function resetChamps() {
     document.getElementById('jour').value = '';
     document.getElementById('mois').value = '';
+    // Arrêter le son
+    let sonAnniversaire = document.getElementById('sonAnniversaire');
+    sonAnniversaire.pause();
+    sonAnniversaire.currentTime = 0;
+
+    // Cacher l'image
+    let imageAnniversaire = document.getElementById('imageAnniversaire');
+    imageAnniversaire.style.display = 'none';
+
+    // Effacer le texte du résultat
+       let resultatElement = document.getElementById('resultat');
+       resultatElement.textContent = '';
 }
 
 function calculerJoursRestants() {
@@ -38,16 +50,11 @@ function calculerJoursRestants() {
     // Affichez le résultat
     let resultatElement = document.getElementById('resultat');
     resultatElement.textContent = "Il reste " + joursRestants + " jours avant votre anniversaire.";
+
+    let sonAnniversaire = document.getElementById('sonAnniversaire');
+    sonAnniversaire.play();
+
+    // Afficher l'image
+    let imageAnniversaire = document.getElementById('imageAnniversaire');
+    imageAnniversaire.style.display = 'block';
 }
-// Chargement de l'image
-// const imageAnniversaire = document.createElement('img');
-// imageAnniversaire.src = 'https://example.com/image-anniversaire.png';
-// imageAnniversaire.width = '200px';
-// imageAnniversaire.height = '200px';
-
-// // Chargement du son
-// const sonAnniversaire = new Audio('https://example.com/son-anniversaire.mp3');
-
-// // Affichage de l'image et du son
-// document.body.appendChild(imageAnniversaire);
-// sonAnniversaire.play();
